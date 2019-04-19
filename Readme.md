@@ -8,3 +8,6 @@ Use steps:
 2. While being in 1: sencha package build
 3. In project/app.json add in requires font-awesome-5.
 4. Build your app
+
+Inspired from:
+https://www.sencha.com/forum/showthread.php?469569-How-to-upgrade-Font-Awesome
