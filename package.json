@@ -1,0 +1,157 @@
+{
+  /**
+   * The name of the package.
+   */
+  "name": "font-awesome-5",
+  "sencha": {
+    "name": "font-awesome-5",
+    "namespace": "Ext",
+    "type": "code",
+    "toolkit": "classic",
+    "framework": "ext",
+    "theme": "theme-neptune",
+    "format": "1",
+    "output": "${package.dir}/build",
+    "local": true,
+    "resource": {
+      "paths": ""
+    },
+    "resources": [
+      {
+        "path": "${package.dir}/resources",
+        "output": "shared"
+      }
+    ],
+    /**
+     * The author of the package.
+     *
+     * Required only if you are distributing this package through a Sencha Cmd repository,
+     * in which case it should match the name you assign to your local package repository.
+     */
+    "creator": "anonymous",
+    /**
+     * A summarized description of this package.
+     */
+    "summary": "Short summary",
+    /**
+     * A detailed description of this package.
+     */
+    "detailedDescription": "Long description of package",
+    /**
+     * The package version.
+     *
+     * Typically, changes to the package should come along with changes to the version.
+     * This number should be in this format: d+(.d+)*
+     */
+    "version": "1.0.0",
+    /**
+     * The version that users can transparently update from without requiring code changes.
+     *
+     * In addition the version property, packages can also indicate the degree to which
+     * they are backward compatible using the compatVersion property.
+     */
+    "compatVersion": "1.0.0",
+    /**
+     * Additional resources used during theme slicing operations
+     */
+    "slicer": null,
+    /**
+     * Sass configuration properties.
+     */
+    "sass": {
+      /**
+       * The namespace to which this package's SASS corresponds. The default value of
+       * "FontAwesome5" means that the files in ./sass/src (and ./sass/var) match classes in
+       * the FontAwesome5" root namespace. In other words, "FontAwesome5.panel.Panel" maps to
+       * ./sass/src/panel/Panel.scss.
+       *
+       * To style classes from any namespace, set this to blank. If this is blank,
+       * then to style "FontAwesome5.panel.Panel" you would put SASS in
+       * ./sass/src/FontAwesome5/panel/Panel.scss.
+       */
+      "namespace": "Ext",
+      /**
+       * Comma-separated list of files or folders containing extra Sass. These
+       * files are automatically included in the Sass compilation. By default this
+       * is just "etc/all.scss" to allow import directives to control the order
+       * other files are included.
+       *
+       * All "etc" files are included at the top of the Sass compilation in their
+       * dependency order:
+       *
+       *      +-------+---------+
+       *      |       | base    |
+       *      | theme +---------+
+       *      |       | derived |
+       *      +-------+---------+
+       *      | packages        |  (in package dependency order)
+       *      +-----------------+
+       *      | application     |
+       *      +-----------------+
+       */
+      "etc": [
+        "${package.dir}/sass/etc/all.scss"
+      ],
+      /**
+       * Comma-separated list of folders containing Sass variable definitions
+       * files. These file can also define Sass mixins for use by components.
+       *
+       * All "var" files are included after "etc" files in the Sass compilation in
+       * dependency order:
+       *
+       *      +-------+---------+
+       *      |       | base    |
+       *      | theme +---------+
+       *      |       | derived |
+       *      +-------+---------+
+       *      | packages        |  (in package dependency order)
+       *      +-----------------+
+       *      | application     |
+       *      +-----------------+
+       *
+       * The "sass/var/all.scss" file is always included at the start of the var
+       * block before any files associated with JavaScript classes.
+       */
+      "var": [
+        "${package.dir}/sass/var"
+      ],
+      /**
+       * Comma-separated list of folders containing Sass rule files.
+       *
+       * All "src" files are included after "var" files in the Sass compilation in
+       * dependency order (the same order as "etc"):
+       *
+       *      +-------+---------+
+       *      |       | base    |
+       *      | theme +---------+
+       *      |       | derived |
+       *      +-------+---------+
+       *      | packages        |  (in package dependency order)
+       *      +-----------------+
+       *      | application     |
+       *      +-----------------+
+       */
+      "src": [
+        "${package.dir}/sass/src",
+        "${package.dir}/sass/src/all.scss"
+      ]
+    },
+    /**
+     * This is the comma-separated list of folders where classes reside. These
+     * classes must be explicitly required to be included in the build.
+     */
+    "classpath": [
+      "${package.dir}/src"
+    ],
+    /**
+     * Comma-separated string with the paths of directories or files to search. Any classes
+     * declared in these locations will be automatically required and included in the build.
+     * If any file defines an Ext JS override (using Ext.define with an "override" property),
+     * that override will in fact only be included in the build if the target class specified
+     * in the "override" property is also included.
+     */
+    "overrides": [
+      "${package.dir}/overrides"
+    ]
+  }
+}
