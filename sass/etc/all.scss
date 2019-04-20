@@ -1,23 +1,9 @@
 $fa-font-5-path: get-resource-path('webfonts', 'shared');
 
 @import "_mixins";
+@import "mixins/_font-icon";
+@import "mixins/_icon";
 
 // NOTE:
 //  _variables.scss is imported much earlier by ext/sass/etc/font-awesome-variables.scss
 //  all css generating pieces are imported by src/all.scss
-
-@mixin font-icon-pseudo-content($char, $rotation, $rotation-origin) {
-  content: fa-content($char);
-
-  @if $rotation != null {
-    display: inline-block;
-    -webkit-transform: $rotation;
-    -webkit-transform-origin: $rotation-origin;
-    -moz-transform: $rotation;
-    -moz-transform-origin: $rotation-origin;
-    -ms-transform: $rotation;
-    -ms-transform-origin: $rotation-origin;
-    transform: $rotation;
-    transform-origin: $rotation-origin;
-  }
-}
