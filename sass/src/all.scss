@@ -12,6 +12,7 @@
 @import "../etc/_rotated-flipped.scss";
 @import "../etc/_stacked.scss";
 @import "../etc/_icons.scss";
+@import "../etc/_old_icons.scss";
 @import "../etc/_screen-reader.scss";
 @import "../etc/brands.scss";
 @import "../etc/regular.scss";
@@ -20,10 +21,10 @@
 // The "x-fa" class should be used in Ext JS applications instead
 // of "fa".  The "fa" class sets some properties that may collide
 // with theme properties, whereas "x-fa" sets only the font-family.
-//.#{$prefix}fa:before,
-////.#{$prefix}fal:before {
-////    font-family: "Font Awesome 5 Free Light" !important;
-////}
+.#{$prefix}fa:before,
+//.#{$prefix}fal:before {
+//    font-family: "Font Awesome 5 Free Light" !important;
+//}
 .#{$prefix}fas:before {
     font-family: "Font Awesome 5 Free Solid" !important;
 }
