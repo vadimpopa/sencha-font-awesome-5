@@ -7,7 +7,10 @@ Use steps:
 1. Copy into project/packages/local/font-awesome-5
 2. While being in 1: sencha package build
 3. In project/app.json add in requires font-awesome-5.
-4. Build your app
+4. Make sure your theme package has (for panel tools): 
+	- `$font-icon-font-family: "Font Awesome 5 Free Solid";`
+	- `$enable-font-icons: true;`
+5. Build your app
 
 Inspired from:
 https://www.sencha.com/forum/showthread.php?469569-How-to-upgrade-Font-Awesome
