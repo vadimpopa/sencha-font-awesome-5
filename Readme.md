@@ -1,16 +1,15 @@
-# font-awesome-5 - Read Me
+# font awesome 5
 
-Based on font awesome 5, free version. This package can work along with the 4 version from within the ext/packages/font-awesome, thus you can have both packages in app.json requires
+In order to have only one font awesome version loaded in the page, this package replaces almost completely sencha's font awesome v4 located at ext/packages/font-awesome.
 
 Use steps:
 
-1. Copy into project/packages/local/font-awesome-5
-2. While being in 1: `sencha package build`
-3. In project/app.json add in requires `font-awesome-5`.
-4. Make sure your theme package has (for panel tools): 
+1. Copy the content of this repo into `project/packages/local/font-awesome`. This is just to have a local copy in your project. Local copy is needed, because some build enviroments may be configured on each production build to copy ext framework from remote into the project which will revert back to the sencha's font awesome package.
+
+2. While being in 1 run `sencha package build` - this will copy and replace needed files from `project/packages/local/font-awesome` into `project/ext/packages/font-awesome`. For more details see `project/packages/local/font-awesome/build.xml`
+
+3. Make sure your theme package or app has the fa5 set (for panel tools and other components):
 	- `$font-icon-font-family: "Font Awesome 5 Free Solid";`
 	- `$enable-font-icons: true;`
-5. Build your app
 
-Inspired from:
-https://www.sencha.com/forum/showthread.php?469569-How-to-upgrade-Font-Awesome
+4. Build your app

@@ -1,3 +1,3 @@
-# font-awesome-5/licenses
+# font-awesome/licenses
 
 This folder contains the supported licenses for third-party use.

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project name="font-awesome-5" default=".help">
+<project name="font-awesome" default=".help">
 
     <script language="javascript">
         <![CDATA[
@@ -88,12 +88,23 @@
             <target name="-before-build"/>
             <target name="-after-build"/>
     -->
-
     <target name="-after-init-local">
-        <copy file="${package.dir}/sass/etc/font-awesome-5-variables.scss"
-              tofile="${framework.dir}/sass/etc/font-awesome-5-variables.scss" overwrite="true"/>
-        <copy file="${package.dir}/sass/etc/ext-all.scss"
-              tofile="${framework.dir}/sass/etc/all.scss" overwrite="true"/>
-    </target>
+        <copy file="${package.dir}/sass/etc/font-awesome-variables.scss"
+              tofile="${framework.dir}/sass/etc/font-awesome-variables.scss" overwrite="true"/>
 
+        <delete includeemptydirs="true">
+            <fileset dir="${framework.dir}/packages/font-awesome/">
+                <include name="**/*"/>
+                <exclude name="build.xml"/>
+            </fileset>
+        </delete>
+
+        <copy todir="${framework.dir}/packages/font-awesome/">
+            <fileset dir="${package.dir}/">
+                <include name="**/*"/>
+                <exclude name="build.xml"/>
+            </fileset>
+        </copy>
+
+    </target>
 </project>

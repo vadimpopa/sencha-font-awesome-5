@@ -2,9 +2,9 @@
   /**
    * The name of the package.
    */
-  "name": "font-awesome-5",
+  "name": "font-awesome",
   "sencha": {
-    "name": "font-awesome-5",
+    "name": "font-awesome",
     "namespace": "Ext",
     "type": "code",
     "toolkit": "classic",
@@ -28,11 +28,11 @@
      * Required only if you are distributing this package through a Sencha Cmd repository,
      * in which case it should match the name you assign to your local package repository.
      */
-    "creator": "anonymous",
+    "creator": "Vadim Popa, https://github.com/vadimpopa",
     /**
      * A summarized description of this package.
      */
-    "summary": "Short summary",
+    "summary": "This package provides the Font Awesome 5",
     /**
      * A detailed description of this package.
      */
@@ -43,14 +43,14 @@
      * Typically, changes to the package should come along with changes to the version.
      * This number should be in this format: d+(.d+)*
      */
-    "version": "1.0.0",
+    "version": "5.8.1",
     /**
      * The version that users can transparently update from without requiring code changes.
      *
      * In addition the version property, packages can also indicate the degree to which
      * they are backward compatible using the compatVersion property.
      */
-    "compatVersion": "1.0.0",
+    "compatVersion": "5.8.1",
     /**
      * Additional resources used during theme slicing operations
      */

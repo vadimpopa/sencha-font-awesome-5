@@ -1,4 +1,4 @@
-# font-awesome-5/src
+# font-awesome/src
 
 This folder contains source code that will automatically be added to the classpath when
 the package is used.
