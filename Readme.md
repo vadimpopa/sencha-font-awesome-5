@@ -1,8 +1,8 @@
-# font awesome 5
+# font awesome 5.8.1
 
 In order to have only one font awesome version loaded in the page, this package replaces almost completely sencha's font awesome v4 located at ext/packages/font-awesome.
 
-Use steps:
+Install steps:
 
 1. Copy the content of this repo into `project/packages/local/font-awesome`. This is just to have a local copy in your project. Local copy is needed, because some build enviroments may be configured on each production build to copy ext framework from remote into the project which will revert back to the sencha's font awesome package.
 
