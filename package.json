@@ -113,7 +113,8 @@
        * block before any files associated with JavaScript classes.
        */
       "var": [
-        "${package.dir}/sass/var"
+        "${package.dir}/sass/var",
+        "${package.dir}/sass/var/all.scss"
       ],
       /**
        * Comma-separated list of folders containing Sass rule files.
